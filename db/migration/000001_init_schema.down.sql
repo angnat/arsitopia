@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS arsitopia.merchants;
+DROP TABLE IF EXISTS arsitopia.order_items;
+DROP TABLE IF EXISTS arsitopia.orders;
+DROP TABLE IF EXISTS arsitopia.products;
+DROP TABLE IF EXISTS arsitopia.product_tags;
+DROP TABLE IF EXISTS arsitopia.arsitek;
+DROP TABLE IF EXISTS arsitopia.skill;
+DROP TABLE IF EXISTS arsitopia.arsitek_skill;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS countries;
