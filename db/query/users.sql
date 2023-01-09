@@ -3,7 +3,7 @@ INSERT INTO users (
     full_name,    
     country_code
 ) VALUES (
-    $1, $2
+    ?, ?
 ) RETURNING *;
 
 -- name: Getusers :one
