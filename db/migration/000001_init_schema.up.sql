@@ -10,7 +10,7 @@ CREATE TABLE "arsitopia"."merchants" (
   "id" bigserial PRIMARY KEY,
   "country_code" int,
   "merchant_name" varchar,
-  "created at" varchar,
+  "created_at" varchar,
   "admin_id" int
 );
 
@@ -52,7 +52,7 @@ CREATE TABLE "arsitopia"."arsitek" (
   "name" varchar,
   "country_code" int,
   "rating" int,
-  "createdate" date,
+  "createdate" timestamptz DEFAULT (now()),
   "createdby" varchar,
   "modifieddate" date,
   "modifiedby" varchar
@@ -61,7 +61,7 @@ CREATE TABLE "arsitopia"."arsitek" (
 CREATE TABLE "arsitopia"."skill" (
   "id" bigserial PRIMARY KEY,
   "skill_name" varchar,
-  "createdate" date,
+  "createdate" timestamptz DEFAULT (now()),
   "createdby" varchar,
   "modifieddate" date,
   "modifiedby" varchar
@@ -71,7 +71,7 @@ CREATE TABLE "arsitopia"."arsitek_skill" (
   "id" bigserial PRIMARY KEY,
   "id_arsitek" bigserial,
   "id_skill" bigserial,
-  "createdate" date,
+  "createdate" timestamptz DEFAULT (now()),
   "createdby" varchar,
   "modifieddate" date,
   "modifiedby" varchar
